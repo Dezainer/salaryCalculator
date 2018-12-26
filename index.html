@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculador de Salario</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="content">
+		<h1>CÁLCULO DE SALÁRIO</h1>
+		<div class="container">
+			<label>SALARIO ATUAL</label>
+			<input 
+				id="old-salary"
+				type="number" 
+				min="0.00" 
+				step="any"
+				placeholder="0.00" 
+			/>
+			<div class="result">
+				<hr>
+				<div class="indexes">
+					<div>
+						<label>IGMP</label>
+						<h3 id="igmp"></h3>
+					</div>
+					<div>
+						<label>INPC</label>
+						<h3 id="inpc"></h3>
+					</div>
+					<div>
+						<label>AJUSTE</label>
+						<h3 id="adjustment"></h3>
+					</div>
+				</div>
+				<label>SALARIO AJUSTADO</label>
+				<h2 id="new-salary">9500</h2>
+			</div>
+			<button onclick="getNewSalary()">CALCULAR</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+hr {
+	margin-bottom: 32px;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 60px;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.26);
+}
+
+.indexes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.result {
+	max-height: 0;
+	opacity: 0;
+	height: 191px;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+}
+.result.active {
+	max-height: 191px;
+	opacity: 1;
+}
+
+label {
+	font-style: italic;
+	color: rgba(0,0,0,0.26);
+}
+
+
+input {
+	padding: 6px 0 16px 0;
+	font-size: 1.6em;
+	border: none;
+	outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+	display: inline-block;
+	padding: 16px;
+	border: none;
+	outline: none;
+	background: blue;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	transition: all 0.2s ease-in-out;
+}
+button:disabled {
+	opacity: 0.26;
+}
+button:active {
+	transform: scale(0.8);
+}
+
+h1 {
+	font-style: italic;
+	color: rgba(0,0,0,0.8);
+	font-size: 2.6em;
+}
+h2 {
+	font-size: 2.6em;
+	padding: 6px 0 16px 0;
+}
+h3 {
+	font-size: 1.6em;
+	padding: 6px 0 16px 0;
+}
